@@ -2,12 +2,12 @@ import os
 import uuid
 import base64
 from unstructured.partition.pdf import partition_pdf
-from langchain_openai import ChatOpenAI
+from langchain.llms import ChatOpenAI
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 from langchain.schema.messages import HumanMessage, SystemMessage
 from langchain.schema.document import Document
-from langchain_openai import OpenAIEmbeddings
+from langchain.embeddings import OpenAIEmbeddings
 from langchain_postgres.vectorstores import PGVector
 from pinecone import Pinecone
 from pinecone import ServerlessSpec

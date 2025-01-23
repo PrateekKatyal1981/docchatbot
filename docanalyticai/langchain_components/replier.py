@@ -1,10 +1,10 @@
 import os
-from langchain_openai import ChatOpenAI
-from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
+from langchain.chat_models import ChatOpenAI
+from langchain.prompts.chat import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_core.runnables import  ConfigurableFieldSpec
 from langchain_community.chat_message_histories import PostgresChatMessageHistory
-from langchain_openai import OpenAIEmbeddings
+from langchain.embeddings import OpenAIEmbeddings
 from langchain_postgres.vectorstores import PGVector
 from langchain_community.vectorstores import Pinecone
 
