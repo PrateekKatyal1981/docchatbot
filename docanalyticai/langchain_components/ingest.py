@@ -2,7 +2,7 @@ import os
 import uuid
 import base64
 from unstructured.partition.pdf import partition_pdf
-from langchain.llms import ChatOpenAI
+from langchain.chat_models import ChatOpenAI
 from langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 from langchain.schema.messages import HumanMessage, SystemMessage
@@ -15,7 +15,7 @@ from langchain_pinecone import PineconeVectorStore
 
 from dotenv import load_dotenv
 load_dotenv()
-
+x
 openai_api_key = os.getenv("OPENAI_API_KEY")
 POSTGRES_URL_EMBEDDINDS=os.getenv("POSTGRES_URL_EMBEDDINDS")
 PINECONE_API_KEY=os.getenv("PINECONE_API_KEY")
