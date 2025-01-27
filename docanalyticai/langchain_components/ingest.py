@@ -15,7 +15,7 @@ from langchain_pinecone import PineconeVectorStore
 
 from dotenv import load_dotenv
 load_dotenv()
-x
+
 openai_api_key = os.getenv("OPENAI_API_KEY")
 POSTGRES_URL_EMBEDDINDS=os.getenv("POSTGRES_URL_EMBEDDINDS")
 PINECONE_API_KEY=os.getenv("PINECONE_API_KEY")
