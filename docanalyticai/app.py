@@ -1,6 +1,6 @@
 import streamlit as st
 import random
-from langchain_components.replier import *
+from docanalyticai.langchain_components.replier import *
 import fitz
 
 def display_pdf(pdf_path):
